@@ -18,3 +18,6 @@ For this reason I've created `PageAlignedArray`. It makes it a breeze to create 
 ```
 
 **NOTE:** While it is safe to mutate the contents of the array after generating a buffer, keep in mind that you must generate a new buffer each time the length of the array changes, otherwise Metal won't know the array's new length.
+
+##Suitable for large datasets
+Because of the page-alignment constraint, `PageAlignedArray` has a minimum allocation size of one page, which translates to 16Kb on most iOS devices. This means that it is mostly suitable for larger, 100Kb+ datasets. Smaller datasets will cause significant memory waste with negligible performance benefits. 
