@@ -12,6 +12,7 @@
 		51160A931DAEF9EE0068C668 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51160A911DAEF9EE0068C668 /* Main.storyboard */; };
 		51160A951DAEF9EE0068C668 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51160A941DAEF9EE0068C668 /* Assets.xcassets */; };
 		51160A981DAEF9EE0068C668 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51160A961DAEF9EE0068C668 /* LaunchScreen.storyboard */; };
+		51160AA01DAEFA030068C668 /* PageAlignedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51160A9F1DAEFA030068C668 /* PageAlignedArray.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		51160A941DAEF9EE0068C668 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51160A971DAEF9EE0068C668 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		51160A991DAEF9EE0068C668 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51160A9F1DAEFA030068C668 /* PageAlignedArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageAlignedArray.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		51160A8C1DAEF9EE0068C668 /* PageAlignedArray */ = {
 			isa = PBXGroup;
 			children = (
+				51160A9F1DAEFA030068C668 /* PageAlignedArray.swift */,
 				51160A8D1DAEF9EE0068C668 /* AppDelegate.swift */,
 				51160A8F1DAEF9EE0068C668 /* ViewController.swift */,
 				51160A911DAEF9EE0068C668 /* Main.storyboard */,
@@ -96,6 +99,7 @@
 				TargetAttributes = {
 					51160A891DAEF9EE0068C668 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = E54FNFV6AU;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -137,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				51160A901DAEF9EE0068C668 /* ViewController.swift in Sources */,
+				51160AA01DAEFA030068C668 /* PageAlignedArray.swift in Sources */,
 				51160A8E1DAEF9EE0068C668 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,7 +265,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = E54FNFV6AU;
 				INFOPLIST_FILE = PageAlignedArray/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.eldade.PageAlignedArray;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -272,7 +279,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = E54FNFV6AU;
 				INFOPLIST_FILE = PageAlignedArray/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.eldade.PageAlignedArray;
 				PRODUCT_NAME = "$(TARGET_NAME)";
