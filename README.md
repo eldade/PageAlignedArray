@@ -1,4 +1,4 @@
-#PageAlignedArray
+# PageAlignedArray
 
 `PageAlignedArray` is a Swift class that implements a version of the built-in Swift array, but with guaranteed page-aligned storage buffers.
 This is useful for iOS/macOS applications that use the Metal API. If you have large buffers with vertexes or any other data that changes between frames, it is highly recommended that you load that data to the GPU using shared memory (between the CPU and the GPU). Unfortunately, allocating page-aligned memory and managing its contents in Swift can be a pain. 
