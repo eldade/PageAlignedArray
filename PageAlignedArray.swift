@@ -132,7 +132,7 @@ struct PageAlignedContiguousArray<T>: RangeReplaceableCollection {
     ///   contents of `newElements` to the collection, the complexity is O(*n*),
     ///   where *n* is the length of `newElements`.
     public mutating func replaceSubrange<C>(_ subrange: Range<Int>, with newElements: C) where C : Collection, C.Iterator.Element == T {
-        let newCount = newElements.count as! Int
+        let newCount = newElements.count 
         let oldCount = self.count
         let eraseCount = subrange.count
         
@@ -153,7 +153,7 @@ struct PageAlignedContiguousArray<T>: RangeReplaceableCollection {
             
             // Assign over the original subRange
             var i = newElements.startIndex
-            for j in CountableRange(subrange) {
+            for j in subrange {
                 elements[j] = newElements[i]
                 newElements.formIndex(after: &i)
             }
@@ -274,6 +274,6 @@ extension PageAlignedContiguousArray : ExpressibleByArrayLiteral {
 
 extension MTLDevice {
     func makeBufferWithPageAlignedArray<T>(_ array: PageAlignedContiguousArray<T>) -> MTLBuffer? {
-        return self.makeBuffer(bytesNoCopy: array.buffer, length: array.bufferLength, options: .storageModeShared, deallocator: nil)
+        return self.makeBuffer(bytesNoCopy: array.buffer, length: array.bufferLength, options: [.storageModeShared], deallocator: nil)
     }
 }
