@@ -16,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D5504FC2721DCAC002B01E0 /* DEVELOPMENT_TEAM.template.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DEVELOPMENT_TEAM.template.xcconfig; sourceTree = "<group>"; };
+		3D5504FD2721DCAC002B01E0 /* DEVELOPMENT_TEAM.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DEVELOPMENT_TEAM.xcconfig; sourceTree = "<group>"; };
+		3D5504FE2721DCAC002B01E0 /* Shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
 		51160A8A1DAEF9EE0068C668 /* PageAlignedArray.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PageAlignedArray.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51160A8D1DAEF9EE0068C668 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51160A8F1DAEF9EE0068C668 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,10 +40,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D5504FB2721DCAC002B01E0 /* Xcode-config */ = {
+			isa = PBXGroup;
+			children = (
+				3D5504FC2721DCAC002B01E0 /* DEVELOPMENT_TEAM.template.xcconfig */,
+				3D5504FD2721DCAC002B01E0 /* DEVELOPMENT_TEAM.xcconfig */,
+				3D5504FE2721DCAC002B01E0 /* Shared.xcconfig */,
+			);
+			path = "Xcode-config";
+			sourceTree = "<group>";
+		};
 		51160A811DAEF9ED0068C668 = {
 			isa = PBXGroup;
 			children = (
 				51160A8C1DAEF9EE0068C668 /* PageAlignedArray */,
+				3D5504FB2721DCAC002B01E0 /* Xcode-config */,
 				51160A8B1DAEF9EE0068C668 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -99,7 +113,7 @@
 				TargetAttributes = {
 					51160A891DAEF9EE0068C668 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = E54FNFV6AU;
+						DevelopmentTeam = FK9S39L3SK;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -170,6 +184,7 @@
 /* Begin XCBuildConfiguration section */
 		51160A9A1DAEF9EE0068C668 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D5504FE2721DCAC002B01E0 /* Shared.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -220,6 +235,7 @@
 		};
 		51160A9B1DAEF9EE0068C668 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D5504FE2721DCAC002B01E0 /* Shared.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -265,7 +281,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = E54FNFV6AU;
 				INFOPLIST_FILE = PageAlignedArray/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -279,7 +294,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = E54FNFV6AU;
 				INFOPLIST_FILE = PageAlignedArray/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -308,6 +322,7 @@
 				51160A9E1DAEF9EE0068C668 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
