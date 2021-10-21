@@ -274,6 +274,6 @@ extension PageAlignedContiguousArray : ExpressibleByArrayLiteral {
 
 extension MTLDevice {
     func makeBufferWithPageAlignedArray<T>(_ array: PageAlignedContiguousArray<T>) -> MTLBuffer? {
-        return self.makeBuffer(bytesNoCopy: array.buffer, length: array.bufferLength, options: .storageModeShared, deallocator: nil)
+        return self.makeBuffer(bytesNoCopy: array.buffer, length: array.bufferLength, options: [.storageModeShared], deallocator: nil)
     }
 }
