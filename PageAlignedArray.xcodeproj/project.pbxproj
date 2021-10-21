@@ -114,7 +114,7 @@
 					51160A891DAEF9EE0068C668 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = FK9S39L3SK;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1240;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -310,7 +310,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.eldade.PageAlignedArray;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -324,7 +324,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.eldade.PageAlignedArray;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
