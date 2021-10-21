@@ -153,7 +153,7 @@ struct PageAlignedContiguousArray<T>: RangeReplaceableCollection {
             
             // Assign over the original subRange
             var i = newElements.startIndex
-            for j in CountableRange(subrange) {
+            for j in subrange {
                 elements[j] = newElements[i]
                 newElements.formIndex(after: &i)
             }

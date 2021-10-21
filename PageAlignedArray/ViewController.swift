@@ -70,13 +70,13 @@ class ViewController: UIViewController {
         
         var current = 0.0
         for (index, _) in alignedArrayInitializer.enumerated() {
-            alignedArrayInitializer[index] = matrix_double4x4.init(columns: (vector_double4(current), vector_double4(current), vector_double4(current), vector_double4(current)))
+			alignedArrayInitializer[index] = matrix_double4x4.init(columns: (vector_double4(repeating: current), vector_double4(repeating: current), vector_double4(repeating: current), vector_double4(repeating: current)))
             current += 1.0
         }
         
         current = 0.0
         repeat {
-            matrixTest.columns = (vector_double4(current), vector_double4(current), vector_double4(current), vector_double4(current))
+			matrixTest.columns = (vector_double4(repeating: current), vector_double4(repeating: current), vector_double4(repeating: current), vector_double4(repeating: current))
 
             let currentMat = alignedArrayInitializer.first
             if currentMat! != matrixTest {
